@@ -8,7 +8,7 @@ getWeatherData = (city) => {
     //   const URL = "https://api.openweathermap.org/data/2.5/weather";
     //HINT: Use template literals to create a url with input and an API key
 
-    //CODE GOES HERE
+    
     const options = {
         method: 'GET',
         headers: {
@@ -30,7 +30,7 @@ getWeatherData = (city) => {
  */
 const searchCity = async () => {
     const city = document.getElementById('city-input').value;
-    // CODE GOES HERE
+    
     const data = await getWeatherData(city);
     showWeatherData(data);
 }
